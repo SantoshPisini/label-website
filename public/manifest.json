@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Label Website",
+  "version": "1.0.0",
+  "description": "An extension helps to put label a the website. It make it easier to distinguish between different environments (Local, DEV, & PROD).",
+  "icons": {
+    "32": "icons/icon.png",
+    "128": "icons/icon.png"
+  },
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": ["tabs", "activeTab", "storage", "scripting"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "host_permissions": ["https://*/*", "http://*/*"]
+}
